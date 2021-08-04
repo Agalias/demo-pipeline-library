@@ -1,4 +1,4 @@
-def call(string volumeNumber) {
+def call(String volumeNumber) {
     powershell '''
         echo $env:volumeNumber
     '''
