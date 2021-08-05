@@ -1,7 +1,7 @@
 def call(String setupPath) {
     echo "${setupPath}"
     powershell '''
-    cd "${setupPath}"
+    cd $Env:setupPath
     git stash
     git pull
     '''
