@@ -1,4 +1,5 @@
 def call(String setupPath) {
+    echo "${setupPath}"
     powershell """
     echo '${setupPath}'
     cd '${setupPath}'
