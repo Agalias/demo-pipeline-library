@@ -1,6 +1,6 @@
-def call(Map config) {
+def call(String setupPath) {
     powershell '''
-    cd config.setupPath
+    cd setupPath
     git stash
     git pull
     '''
