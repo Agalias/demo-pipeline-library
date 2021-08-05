@@ -1,6 +1,6 @@
-def call() {
+def call(Map config) {
     powershell '''
-    cd $env:AUTOMATION_PATH
+    cd config.setupPath
     git stash
     git pull
     '''
