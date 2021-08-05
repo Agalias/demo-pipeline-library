@@ -1,4 +1,4 @@
-def TVEmaster(String TIMESTAMP = TIMESTAMP) {
+def call(String TIMESTAMP = TIMESTAMP) {
     powershell """
     mkdir L:/processing/'${TIMESTAMP}'
     mkdir L:/processing/'${TIMESTAMP}'/sender
