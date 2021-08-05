@@ -1,6 +1,6 @@
 def call(String setupPath) {
     powershell '''
-    cd setupPath
+    cd $Env:setupPath
     git stash
     git pull
     '''
